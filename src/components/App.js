@@ -35,6 +35,7 @@ const App = () => {
   };
 
   const createNewItem = async (listItem) =>{
+    setAddRow(false)
     await api.postItem(listItem);
     const d = await api.getItems();
     setData(d);

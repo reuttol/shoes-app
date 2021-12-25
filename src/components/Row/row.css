@@ -1,24 +1,33 @@
-.row-container{
-    display: flex;
-    gap: 1.5rem;
+.row-container {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.row__details{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
+.row__details {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
 }
-.row__details--brand{
-    width: 100%;
+.row__details--brand {
+  width: 100%;
 }
 .row__details--size,
-.row__details--color{
-    flex: 0.33;
+.row__details--color {
+  flex: 0.33;
 }
-.row__details--price{
-    flex: 0.34;
+.row__details--price {
+  flex: 0.34;
 }
-.row__btns{
-    display: flex;
-    gap: 1rem;
+.row__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .row__details--size,
+  .row__details--color,
+  .row__details--price {
+    flex: auto;
+    width: 100%;
+  }
 }
